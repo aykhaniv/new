@@ -1,0 +1,103 @@
+#about
+    h1
+        font-weight: 700
+        font-size: 30px
+
+    h2
+        color: #929292
+        font-style: italic
+        margin-bottom: 30px
+    .box
+        display: flex
+        align-items: center
+        .textbox
+            width: 520px
+            text-align: right
+            margin: 0 10px
+            h3
+                font-size: 30px
+                line-height: 1.2
+                font-weight: 700
+                margin: 0 20px
+            h4
+                font-size: 20px
+                line-height: 1.2
+                color: #a19f9f
+                margin: 10px 20px
+        .imgbox
+            width: 200px
+            border-radius: 300px
+            overflow: hidden
+    .box-left
+        display: flex
+        float: right
+        margin: 100px 0
+        .textbox
+            width: 550px
+            text-align: left
+            h3
+                font-size: 30px
+                line-height: 1.2
+                font-weight: 700
+                margin: 0 20px
+            h4
+                font-size: 20px
+                line-height: 1.2
+                color: #a19f9f
+                margin: 10px 20px
+        .imgbox
+            width: 200px
+            border-radius: 300px
+            overflow: hidden
+    .borderbox
+        h5
+            background-color: #caae0b
+            width: 120px
+            padding: 30px
+            color: #000000
+            border-radius: 520px
+            text-align: center
+    .textboxend
+        h6
+            font-size: 20px
+            color: #a8a5a5
+            font-style: italic
+            padding: 20px
+
+    @media screen and ( max-width: 900px  )
+        .col-md-12
+            display: flex
+            justify-content: end
+            margin: 10px 40px
+            .box
+                display: flex
+                align-items: baseline
+                .imgbox
+                    order: -1
+                    width: 90px
+                    align-content: baseline
+                .textbox
+                    text-align: left
+                    width: 200px
+            .box-left
+                display: flex
+                align-items: baseline
+                justify-content: center
+                .imgbox
+                    order: -1
+                    width: 90px
+                .textbox
+                    width: 200px
+            .borderbox
+                h5
+                    background-color: #caae0b
+                    color: #000000
+                    margin: 20px
+                    border-radius: 520px
+                    position: relative
+                    right: 100%
+                    text-align: center
+                    font-size: 20px
+        .textboxend
+            h6
+                display: none
